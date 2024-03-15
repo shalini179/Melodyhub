@@ -1,0 +1,307 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(thumbnails/hip-hop-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    height: 50px;
+    background-color: #1b222114;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid transparent;
+    z-index: 100;
+}
+.navbar a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+    float: left;
+    display: block;
+    padding: 10px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 200ms;
+}
+.navbar a:hover {
+    background-color: aliceblue;
+    border-radius: 10px;
+    color: #16806c;
+    scale: 120%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    background-color: #1b2223a1;
+    margin-bottom: 0;
+}
+.logo img{
+    height: 60px;
+    width: 75px;
+}
+.logo p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0ef6cc;
+    font-size: 25px;
+    margin-right: 30px;
+    padding-left: 20px;  
+    margin-bottom: 0;
+
+}
+
+.CountryHeader {
+    position: relative;
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("CW\ Images/CountryBG1.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    margin-bottom:10px;
+    padding-bottom: 200px;
+}
+
+.band-name {
+    position: relative;
+    top: 400px;
+    text-align: center;
+    margin: 0;
+    font-size: 8rem;
+    font-weight: 600;
+    color:transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(CW\ Images/TextBG1.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.CountryHeader p{
+    margin-top: 450px;
+    font-size: large;
+    text-align: center;
+    color: #fff;
+}
+
+.BigContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    height:auto;
+    background-color: #000;
+}
+
+.Container1{
+    width: 1200px;
+    margin-top: 10px;
+}
+
+.Container1 h3{
+    font-size: 30px;
+    color: #fff;
+    margin-left: 450px;
+}
+
+.Container1 p{
+    font-size: 20px;
+    color: bisque;
+}
+
+.Container2{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Container2 .HeaderEvo{
+    font-size: 30px;
+    color: #fff;
+    margin-left: 400px;
+}
+
+.Container2 .ParaEvo{
+    font-size: 20px;
+    color: bisque;
+}
+
+
+.box{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin-bottom:10px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+}
+
+.box .ImgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box .ImgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.box:hover .ImgBox img{
+    opacity: 0;
+}
+
+.box .ContentBox{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.box:hover .ContentBox{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.box .ContentBox h3{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.box .ContentBox p{
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+}
+
+.box:hover .ContentBox p{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.Container3 .playlist-title{
+    margin-left: 160px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
+iframe{
+    border-radius:12px;
+    width:100%;
+    height:352px;
+    border:"0"
+}
+
+.Container4{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Container4 .carousel-title{
+    margin-left: 220px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.Container4 .Carousel{
+    width: 300px;
+    margin: 100px auto 0;
+    overflow: visible;
+}
+
+.Carousel img{
+    -webkit-box-reflect: below 20px linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+}
+
+footer {
+    position: absolute;
+    margin-bottom: 0;
+    background: #000000;
+    height: auto;
+    width: 100%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding-top: 40px;
+    color: #0ef6cc;
+  }
+
+  .footer-content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-content h3 {
+    font-size: 30px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .footer-content p {
+    display: flex;
+    margin: 10px auto;
+  }
+  .footer-content a {
+    color: #a9b4b2;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .footer_bottom {
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .footer_bottom p {
+    text-align: center;
+    font-size: 20px;
+    word-spacing: 2px;
+  }
+
+  .footer_bottom span {
+    opacity: 0.5;
+  }
